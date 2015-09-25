@@ -1,12 +1,4 @@
-import copy
-import math
-
-import loader
-
-
-def run():
-    loader.dump_effect({'emitters':[]}, "blank.pfx")
-    return loader.loads("""[
+[	
 	{
 		"target": "/pa/units/sea/destroyer/destroyer.json",
 		"patch": [	

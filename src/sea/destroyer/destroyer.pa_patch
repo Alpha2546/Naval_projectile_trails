@@ -1,0 +1,40 @@
+import copy
+import math
+
+import loader
+
+
+def run():
+    loader.dump_effect({'emitters':[]}, "blank.pfx")
+    return loader.loads("""[
+	{
+		"target": "/pa/units/sea/destroyer/destroyer.json",
+		"patch": [	
+		{
+			"op": "add",
+			"path": "/events/fired0/effect_spec",
+			"value": "/mod/t1_naval/muzzle_flash.pfx socket_rightMuzzle01 /mod/t1_naval/muzzle_flash.pfx socket_leftMuzzle01"
+		},
+		{
+			"op": "add",
+			"path": "/events/fired1/effect_spec",
+			"value": "/mod/t1_naval/muzzle_flash.pfx socket_rightMuzzle02 /mod/t1_naval/muzzle_flash.pfx socket_leftMuzzle02"
+		}
+		]
+	},
+	{
+		"target": "/pa/units/sea/destroyer/destroyer_ammo.json",
+		"patch": [
+		{"op": "add", "path": "/events", "value": {
+			"died": {
+			"audio_cue": "/SE/Impacts/missile_destroyer",
+			"effect_spec": "/mod/t1_naval/t1_shell_hit.pfx",
+			}
+		}},
+		{"op": "add", "path": "/fx_trail", "value": {
+			"filename": "/mod/t1_naval/t1_shell_proj_trail.pfx",
+			"offset": [0.0, 0.0, 0.0]
+		}}
+		]
+	},	
+    ]""")

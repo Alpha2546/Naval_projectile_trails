@@ -1,0 +1,23 @@
+{
+    "options" : {
+        "debug_mode" : true,
+        "output_dir" : "..",
+        "pretty_print_effects" : true,
+        "indent" : 2
+    },
+    "modinfo" : {
+        "context" : "client",
+        "identifier" : "com.pa.alpha2546.naval_projectiles",
+        "display_name" : "PA:T Naval projectiles",
+        "description" : "PA:Titans improves the visuals of the standard naval projectiles",
+        "author" : "alpha2546, dom314",
+        "forum" : "https://forums.uberent.com/threads/rel-client-more-pew-pew.69229/",
+        "icon" : "http://i.imgur.com/PQOpc3u.gif",
+        "product" : ["Titans"],
+        "version" : "1.0",
+        "priority": 100
+    },
+    "mod" : [
+        { "from_file" : "/sea/destroyer/destroyer.pa_patch" }
+    ]
+}

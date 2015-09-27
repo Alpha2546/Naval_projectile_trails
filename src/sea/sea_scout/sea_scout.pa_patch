@@ -1,21 +1,16 @@
 [	
 	{
-		"target": "/pa/units/sea/destroyer/destroyer.json",
+		"target": "/pa/units/sea/sea_scout/sea_scout.json",
 		"patch": [	
 		{
 			"op": "add",
 			"path": "/events/fired0/effect_spec",
 			"value": "/mod/t1_naval/muzzle_flash.pfx socket_rightMuzzle01 /mod/t1_naval/muzzle_flash.pfx socket_leftMuzzle01"
-		},
-		{
-			"op": "add",
-			"path": "/events/fired1/effect_spec",
-			"value": "/mod/t1_naval/muzzle_flash.pfx socket_rightMuzzle02 /mod/t1_naval/muzzle_flash.pfx socket_leftMuzzle02"
 		}
 		]
 	},
 	{
-		"target": "/pa/units/sea/destroyer/destroyer_ammo.json",
+		"target": "/pa/units/sea/sea_scout/frigate_ammo_shell.json",
 		"patch": [
 		{"op": "add", "path": "/events", "value": {
 			"died": {

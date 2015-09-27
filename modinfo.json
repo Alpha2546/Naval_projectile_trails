@@ -1,0 +1,16 @@
+{
+    "context": "client",
+    "identifier": "com.pa.alpha2546.naval_projectiles",
+    "display_name": "PA:T Naval projectiles",
+    "description": "PA:Titans improves the visuals of the standard naval projectiles",
+    "author": "alpha2546, dom314",
+    "forum": "https://forums.uberent.com/threads/alphas-particle-effect-workshop-titans.70423/",
+    "icon": "http://s15.postimg.org/4cf893v13/test.png",
+    "product": [
+        "Titans"
+    ],
+    "version": "1.0",
+    "priority": 100,
+    "build": "88288",
+    "date": "2015/09/27"
+}

@@ -1,6 +1,6 @@
 {
     "options" : {
-        "debug_mode" : true,
+        "debug_mode" : false,
         "output_dir" : "..",
         "pretty_print_effects" : true,
         "indent" : 2
@@ -11,13 +11,15 @@
         "display_name" : "PA:T Naval projectiles",
         "description" : "PA:Titans improves the visuals of the standard naval projectiles",
         "author" : "alpha2546, dom314",
-        "forum" : "https://forums.uberent.com/threads/rel-client-more-pew-pew.69229/",
-        "icon" : "http://i.imgur.com/PQOpc3u.gif",
+        "forum" : "https://forums.uberent.com/threads/alphas-particle-effect-workshop-titans.70423/",
+        "icon" : "http://s15.postimg.org/4cf893v13/test.png",
         "product" : ["Titans"],
         "version" : "1.0",
         "priority": 100
     },
     "mod" : [
-        { "from_file" : "/sea/destroyer/destroyer.pa_patch" }
+        { "from_file" : "/sea/destroyer/destroyer.pa_patch" },
+        { "from_file" : "/sea/frigate/frigate.pa_patch" },
+        { "from_file" : "/sea/battleship/battleship.pa_patch" }		
     ]
 }

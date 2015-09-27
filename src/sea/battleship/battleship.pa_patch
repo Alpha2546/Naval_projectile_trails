@@ -1,0 +1,42 @@
+[	
+	{
+		"target": "/pa/units/sea/battleship/battleship.json",
+		"patch": [	
+		{
+			"op": "add",
+			"path": "/events/fired0/effect_spec",
+			"value": "/mod/t2_naval/t2_muzzle_flash.pfx socket_muzzle02 /mod/t2_naval/t2_muzzle_flash.pfx socket_muzzle03 /mod/t2_naval/t2_muzzle_flash.pfx socket_muzzle01"
+		},
+		{
+			"op": "add",
+			"path": "/events/fired1/effect_spec",
+			"value": "/mod/t2_naval/t2_muzzle_flash.pfx socket_muzzle05 /mod/t2_naval/t2_muzzle_flash.pfx socket_muzzle03 /mod/t2_naval/t2_muzzle_flash.pfx socket_muzzle04"
+		},
+		{
+			"op": "add",
+			"path": "/events/fired2/effect_spec",
+			"value": "/mod/t2_naval/t2_muzzle_flash.pfx socket_muzzle08 /mod/t2_naval/t2_muzzle_flash.pfx socket_muzzle03 /mod/t2_naval/t2_muzzle_flash.pfx socket_muzzle07"
+		},
+		{
+			"op": "add",
+			"path": "/events/fired3/effect_spec",
+			"value": "/mod/t2_naval/t2_muzzle_flash.pfx socket_muzzle11 /mod/t2_naval/t2_muzzle_flash.pfx socket_muzzle03 /mod/t2_naval/t2_muzzle_flash.pfx socket_muzzle10"
+		}		
+		]
+	},
+	{
+		"target": "/pa/units/sea/battleship/battleship_ammo.json",
+		"patch": [
+		{"op": "add", "path": "/events", "value": {
+			"died": {
+			"audio_cue": "/SE/Impacts/missile_destroyer",
+			"effect_spec": "/mod/t2_naval/t2_shell_hit.pfx"
+			}
+		}},
+		{"op": "add", "path": "/fx_trail", "value": {
+			"filename": "/mod/t2_naval/t2_shell_proj_trail.pfx",
+			"offset": [0.0, 0.0, 0.0]
+		}}
+	]
+  }	
+]
